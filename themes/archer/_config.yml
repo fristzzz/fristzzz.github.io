@@ -1,16 +1,16 @@
 # ========== Profile ========== #
 # avatar
-avatar: /avatar/Misaka.jpg
+avatar: /avatar/avatar.jpg
 # author name
 author: frist
 # signature
-signature: witness me
+signature: Greetings ^^
 # SNS (you can custom the order)
 social:
   email: zzzzorange33@gmail.com
   github: //github.com/fristzzz
   # wechat should be a path of qr-code image path
-  wechat: /assets/example_qr.png
+  wechat: 
   # qq should be a path of qr-code image path
   qq: 
   telegram: 
@@ -62,20 +62,21 @@ profile_links:
 
 # ========== Site ========== #
 # title of the site (good for SEO)
-SEO_title: Frist's Studio
+SEO_title: Frist's Blogs
 # keywords for site (good for SEO)
 SEO_keywords:
-  - hexo
-  - 'hexo-theme'
-  - 'hexo-blog'
+  - 'notes'
+  - 'economics'
+  - 'programming'
+  - 'machine learning'
 # main title shown in header image
 main_title: Frist's Studio.
 # subtitle
-subtitle: it's better to burn out than to fade away
+subtitle: Be water, my friend.
 # site haeder image
-site_header_image: '/intro/index-bg.jpg'
+site_header_image: '/intro/image.jpg'
 # post haeder image
-post_header_image: '/intro/post-bg.jpg'
+post_header_image: '/intro/post.jpg'
 # 404 image
 _404_image: '/intro/404-bg.jpg'
 
@@ -89,8 +90,8 @@ toc: true
 # Word count & Reading time
 reading_info: false
 # Intro height (the default is 50 percents of the screen, you can input other number)
-index_intro_height: 50
-post_intro_height: 50
+index_intro_height: 70
+post_intro_height: 65
 about_intro_height: 50
 # Blog float button theme ('default' or 'rounded')
 float_button_theme: default
@@ -157,7 +158,7 @@ comment:
 
 # ========== Analytics ========== #
 # enable Busuanzi analytics
-busuanzi: true
+busuanzi: false
 # fill in pv or uv
 busuanzi_pv_or_uv: 'pv'
 # custom analytic slogan, '${count}' is the analytic number, DO NOT modify it.
@@ -171,7 +172,7 @@ CNZZ_analytics:
 
 # ========== Others ========== #
 # Favicon
-favicon: /assets/favicon.ico
+favicon: /assets/rob.ico
 # Post copyright
 copyright:
   enable: true
@@ -185,8 +186,8 @@ website_approve:
   beian_img: /assets/beian.png
 # Blog page article timeliness note
 outdated_threshold:
-  enable: false
-  days: 180
+  enable: true
+  days: 360
   # By default, timeliness reminder will be displayed for each article. That's not necessarily what you want.
   # If true, you can set `timeliness: true` for specified article to enable the reminder.
   specify_article: false
