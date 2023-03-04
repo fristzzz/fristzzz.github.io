@@ -19,12 +19,12 @@
         <meta name="keywords" content="notes,economics,programming,machine learning">
     
     <meta name="description" content="">
-    <meta name="description" content="入门 获取帮助  工作空间  示例： 1234567setwd(&quot;C:&#x2F;myprojects&#x2F;project1&quot;)options()options(digits&#x3D;3) # 三位数字x &lt;- runif(20) # 20个均匀分布summary(x)hist(x) # 直方图q() 输入和输出 输入 source(&quot;filename&quot;)可在当前会话中执行一个脚本。 文本输出">
+    <meta name="description" content="入门 获取帮助   工作空间   示例： 1234567setwd(&quot;C:&#x2F;myprojects&#x2F;project1&quot;)options()options(digits&#x3D;3) # 三位数字x &lt;- runif(20) # 20个均匀分布summary(x)hist(x) # 直方图q() 输入和输出 输入 source(&quot;filename&quot;)可在当前会话中执行一个脚本。 文本">
 <meta property="og:type" content="article">
 <meta property="og:title" content="r basics">
 <meta property="og:url" content="https://fristzzz.github.io/r-language/r-basics/index.html">
 <meta property="og:site_name" content="Frist">
-<meta property="og:description" content="入门 获取帮助  工作空间  示例： 1234567setwd(&quot;C:&#x2F;myprojects&#x2F;project1&quot;)options()options(digits&#x3D;3) # 三位数字x &lt;- runif(20) # 20个均匀分布summary(x)hist(x) # 直方图q() 输入和输出 输入 source(&quot;filename&quot;)可在当前会话中执行一个脚本。 文本输出">
+<meta property="og:description" content="入门 获取帮助   工作空间   示例： 1234567setwd(&quot;C:&#x2F;myprojects&#x2F;project1&quot;)options()options(digits&#x3D;3) # 三位数字x &lt;- runif(20) # 20个均匀分布summary(x)hist(x) # 直方图q() 输入和输出 输入 source(&quot;filename&quot;)可在当前会话中执行一个脚本。 文本">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://fristzzz.github.io/r-language/r-basics/help.png">
 <meta property="og:image" content="https://fristzzz.github.io/r-language/r-basics/workspace.png">
@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://fristzzz.github.io/r-language/r-basics/data_structures.png">
 <meta property="og:image" content="https://fristzzz.github.io/r-language/r-basics/read_table_options.png">
 <meta property="article:published_time" content="2023-03-04T05:40:58.000Z">
-<meta property="article:modified_time" content="2023-03-04T08:30:41.154Z">
+<meta property="article:modified_time" content="2023-03-04T08:55:02.948Z">
 <meta property="article:author" content="Frist&#x2F;Zzzzzorange">
 <meta property="article:tag" content="r language">
 <meta name="twitter:card" content="summary">
@@ -498,8 +498,10 @@
     <article class="article-entry">
         <h1 id="入门">入门</h1>
 <h2 id="获取帮助">获取帮助</h2>
+<hr />
 <p><img src="help.png" /></p>
 <h2 id="工作空间">工作空间</h2>
+<hr />
 <p><img src="workspace.png" /></p>
 <p>示例： <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setwd<span class="punctuation">(</span><span class="string">&quot;C:/myprojects/project1&quot;</span><span class="punctuation">)</span></span><br><span class="line">options<span class="punctuation">(</span><span class="punctuation">)</span></span><br><span class="line">options<span class="punctuation">(</span>digits<span class="operator">=</span><span class="number">3</span><span class="punctuation">)</span> <span class="comment"># 三位数字</span></span><br><span class="line">x <span class="operator">&lt;-</span> runif<span class="punctuation">(</span><span class="number">20</span><span class="punctuation">)</span> <span class="comment"># 20个均匀分布</span></span><br><span class="line">summary<span class="punctuation">(</span>x<span class="punctuation">)</span></span><br><span class="line">hist<span class="punctuation">(</span>x<span class="punctuation">)</span> <span class="comment"># 直方图</span></span><br><span class="line">q<span class="punctuation">(</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="输入和输出">输入和输出</h2>
@@ -512,11 +514,13 @@
 <h3 id="示例">示例</h3>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">source<span class="punctuation">(</span><span class="string">&quot;script1.R&quot;</span><span class="punctuation">)</span></span><br><span class="line">sink<span class="punctuation">(</span><span class="string">&quot;myoutput&quot;</span><span class="punctuation">,</span> append<span class="operator">=</span><span class="literal">TRUE</span><span class="punctuation">,</span> split<span class="operator">=</span><span class="literal">TRUE</span><span class="punctuation">)</span></span><br><span class="line">pdf<span class="punctuation">(</span><span class="string">&quot;mygraphs.pdf&quot;</span><span class="punctuation">)</span></span><br><span class="line">source<span class="punctuation">(</span><span class="string">&quot;script2.R&quot;</span><span class="punctuation">)</span></span><br><span class="line">sink<span class="punctuation">(</span><span class="punctuation">)</span> <span class="comment"># 关闭输出到文件</span></span><br><span class="line">dev.off<span class="punctuation">(</span><span class="punctuation">)</span> <span class="comment"># 将输出返回到终端</span></span><br><span class="line">source<span class="punctuation">(</span><span class="string">&quot;script3.R&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 <h2 id="结果重用">结果重用</h2>
+<hr />
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">lm<span class="punctuation">(</span>mpg<span class="operator">~</span>wt<span class="punctuation">,</span> data<span class="operator">=</span>mtcars<span class="punctuation">,</span> data<span class="operator">=</span>mtcarts<span class="punctuation">)</span></span><br><span class="line">lmfit <span class="operator">&lt;-</span> lm<span class="punctuation">(</span>mpg<span class="operator">~</span>wt<span class="punctuation">,</span> data<span class="operator">=</span>mtcarts<span class="punctuation">)</span> <span class="comment"># 保存结果</span></span><br><span class="line">summary<span class="punctuation">(</span>lmfit<span class="punctuation">)</span> <span class="comment"># 显示分析结果的统计概要</span></span><br><span class="line">plot<span class="punctuation">(</span>lmfit<span class="punctuation">)</span> <span class="comment"># 生成回归诊断图形</span></span><br><span class="line">predict<span class="punctuation">(</span>lmfit<span class="punctuation">,</span> mynewdata<span class="punctuation">)</span> <span class="comment"># 进行预测</span></span><br></pre></td></tr></table></figure>
 <h1 id="创建数据集">创建数据集</h1>
 <p>数据集通常是由数据构成的一个矩形数组，行表示<strong>观测</strong>，列表示<strong>变量</strong>。</p>
 <p>不同的行业对于数据集的行和列叫法不同。统计学家称它们为观测（observation）和变量（variable），数据库分析师则称其为记录（record）和字段（field），数据挖掘和机器学习学科的研究者则把它们叫作示例（example）和属性（attribute）</p>
 <h2 id="数据结构">数据结构</h2>
+<hr />
 <p><img src="data_structures.png" /></p>
 <h3 id="向量">向量</h3>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 单个向量中的数据必须拥有相同的类型或模式</span></span><br><span class="line">a <span class="operator">&lt;-</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">1</span><span class="punctuation">,</span> <span class="number">2</span><span class="punctuation">,</span> <span class="number">3</span><span class="punctuation">)</span></span><br><span class="line">b <span class="operator">&lt;-</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;one&quot;</span><span class="punctuation">,</span> <span class="string">&quot;two&quot;</span><span class="punctuation">,</span> <span class="string">&quot;three&quot;</span><span class="punctuation">)</span></span><br><span class="line"><span class="built_in">c</span> <span class="operator">&lt;-</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="literal">TRUE</span><span class="punctuation">,</span> <span class="literal">TRUE</span><span class="punctuation">,</span> <span class="literal">FALSE</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
@@ -551,6 +555,7 @@
 <h3 id="列表list">列表list</h3>
 <p>列表允许你整合若干（可能无关的）对象到单个对象名下。 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mylist <span class="operator">&lt;-</span> <span class="built_in">list</span><span class="punctuation">(</span>name1 <span class="operator">=</span> obj1<span class="punctuation">,</span> name2 <span class="operator">=</span> obj2<span class="punctuation">,</span> ...<span class="punctuation">)</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="数据的输入">数据的输入</h2>
+<hr />
 <h3 id="键盘输入">键盘输入</h3>
 <p>edit()可以打开一个临时的编辑器</p>
 <p>可以直接嵌入数据集： <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">&gt;</span> mydatatxt <span class="operator">&lt;-</span> <span class="string">&quot;</span></span><br><span class="line"><span class="string">+ age gender weight</span></span><br><span class="line"><span class="string">+ 25 m 166</span></span><br><span class="line"><span class="string">+ 30 f 115</span></span><br><span class="line"><span class="string">+ 18 f 120</span></span><br><span class="line"><span class="string">+ &quot;</span></span><br><span class="line"><span class="operator">&gt;</span> mydata <span class="operator">&lt;-</span> read.table<span class="punctuation">(</span>header<span class="operator">=</span><span class="literal">TRUE</span><span class="punctuation">,</span> text<span class="operator">=</span>mydatatxt<span class="punctuation">)</span></span><br><span class="line"><span class="operator">&gt;</span> mydata</span><br><span class="line">  age gender weight</span><br><span class="line"><span class="number">1</span>  <span class="number">25</span>      m    <span class="number">166</span></span><br><span class="line"><span class="number">2</span>  <span class="number">30</span>      f    <span class="number">115</span></span><br><span class="line"><span class="number">3</span>  <span class="number">18</span>      f    <span class="number">120</span></span><br></pre></td></tr></table></figure></p>
@@ -565,7 +570,7 @@
             <p>原文作者：<a href="https://fristzzz.github.io">Frist/Zzzzzorange</a>
             <p>原文链接：<a href="https://fristzzz.github.io/r-language/r-basics/">https://fristzzz.github.io/r-language/r-basics/</a>
             <p>发表日期：<a href="https://fristzzz.github.io/r-language/r-basics/">March 4th 2023, 5:40:58 am</a>
-            <p>更新日期：<a href="https://fristzzz.github.io/r-language/r-basics/">March 4th 2023, 8:30:41 am</a>
+            <p>更新日期：<a href="https://fristzzz.github.io/r-language/r-basics/">March 4th 2023, 8:55:02 am</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -574,8 +579,8 @@
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href="/major/game-theory/game-theory-2-static-completeinfo-out/" title="2.static_complete_info_out">
-                    <div class="nextTitle">2.static_complete_info_out</div>
+                <a href="/major/game-theory/game-theory-2-static-completeinfo-out/" title="2.Static Complete Info Out">
+                    <div class="nextTitle">2.Static Complete Info Out</div>
                 </a>
             
         </li>
@@ -799,8 +804,6 @@
         
         
         
-        
-        
     
     
     
@@ -823,12 +826,6 @@
             
         
         <li class="archive-post-item">
-            <span class="archive-post-date">03/05</span>
-            <a class="archive-post-title" href="/major/game-theory/game-theory-2-static-completeinfo-out/">2.static_complete_info_out</a>
-        </li>
-    
-        
-        <li class="archive-post-item">
             <span class="archive-post-date">03/04</span>
             <a class="archive-post-title" href="/r-language/r-basics/">r basics</a>
         </li>
@@ -842,13 +839,28 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">03/03</span>
-            <a class="archive-post-title" href="/r%E8%AF%AD%E8%A8%80%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E4%BB%80%E4%B9%88%E6%98%AF%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">什么是深度学习</a>
+            <a class="archive-post-title" href="/r%E8%AF%AD%E8%A8%80%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/what-is-deepleaning/">什么是深度学习</a>
         </li>
     
         
         <li class="archive-post-item">
             <span class="archive-post-date">03/03</span>
             <a class="archive-post-title" href="/coding/git-notes/">git notes</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> Invalid date </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span>
+            <a class="archive-post-title" href="/major/game-theory/game-theory-2-static-completeinfo-out/">2.Static Complete Info Out</a>
         </li>
     
     </div>
