@@ -3,6 +3,7 @@ title: game theory examples
 date: 2023-03-04 01:55:32
 categories: [major, game theory]
 tags: [game theory]
+mathjax: true
 ---
 
 ## Action and Pure Strategy
